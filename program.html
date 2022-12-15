@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Введите ширину (см)", "");
+        let b = prompt("Введите длину (см)", "");
+        let c = prompt("Введите высоту (см)", "");
+        let d = prompt("Введите количество товара (в штуках)", "");
+        let h = 270;
+        let number = 1;
+        while (c * number < h) {
+            number += 1;
+        }
+        number = number - 1;
+        let result = Math.ceil(d/number) * a/100 * b/100;
+        alert(`При высоте 2,7 м для ${d} штук нужно помещение в ${result} квадратов (м^2)`);
+    </script>
+</body>
+</html>
